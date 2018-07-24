@@ -1,0 +1,96 @@
+/* Your board style here */
+body{
+  color: white;
+  background-color: black;
+}
+a{
+  color: white;
+}
+.racer_table td {
+  position: relative;
+  height: 64px;
+  width: 64px;
+}
+.field-dirt{
+  background-image: url("images/tile/land_dirt12.png");
+  background-size: cover;
+}
+.field-grass{
+  background-image: url("images/tile/land_grass11.png");
+  background-size: cover;
+}
+.field-grass:hover{
+  transform: scale(0.95);
+  transition: 0.15s;
+
+}
+.field-dirt:hover{
+  transform: scale(0.95);
+  transition: 0.15s;
+
+}
+
+#center{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#finish{
+  background-image: url("images/finishline.ico");
+  background-size: cover;
+}
+
+#info{
+  text-align: center;
+  font-size:  40px;
+}
+
+.uneditable{
+  transform: scale(0.95);
+  transition: 0.15s;
+}
+
+#start-sprite{
+  transition: 0.1s;
+  z-index: 100;
+  background:  no-repeat center center;
+  background-image: url("images/player_1.png");
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+#finish-sprite{
+  background:  no-repeat center center;
+  background-size: contain;
+  background-image: url("images/finishline.ico");
+  width: 100%;
+  height: 100%;
+}
+
+.obstacle{
+  z-index: 100;
+  background:  no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.absolutepos{
+  position: absolute;
+}
+
+#start{
+  width: 20%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
